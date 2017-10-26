@@ -50,10 +50,4 @@ export class BookTableService {
         }
     }
 
-
-
-
-
-
-
 }
