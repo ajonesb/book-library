@@ -1,30 +1,47 @@
 export let book = [
     {
-        author: 'ABC123',
-        title: 'drone',
+        author: 'Stephen King',
+        title: 'IT',
+        category: 'horror'
     },
     {
-        author: 'ABC123',
-        title: 'drone',
+        author: 'Robert Ludlam',
+        title: 'The Bourne Identity',
+        category: 'action'
     },
     {
-        author: 'ABC123',
-        title: 'drone',
+        author: 'Suzanne Collins',
+        title: 'The Hunger Games',
+        category: 'action'
     },
     {
-        author: 'ABC123',
-        title: 'drone',
+        author: 'J. R. R. Tolkien',
+        title: 'The Lord of the Rings',
+        category: 'action'
     },
     {
-        author: 'ABC123',
-        title: 'drone',
+        author: 'William Shakespeare',
+        title: 'Hamlet',
+        category: 'drama'
     },
     {
-        author: 'ABC123',
-        title: 'drone',
+        author: 'William Shakespeare',
+        title: 'Romeo and Juliet',
+        category: 'drama'
     },
     {
-        author: 'ABC123',
-        title: 'drone',
+        author: 'Bram Stroker',
+        title: 'Dracula',
+        category: 'horror'
+    },
+    {
+        author: 'John Carpenter',
+        title: 'In the Mouth of Madness',
+        category: 'horror'
+    },
+    {
+        author: 'Sylvia Nasar',
+        title: 'A Beautiful Mind',
+        category: 'drama'
     }
 ];
