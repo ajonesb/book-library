@@ -1,5 +1,6 @@
 # book-library
 
+
 // EXERCISE
 
 /* You have three categories of books: horror, action, romance.
@@ -13,6 +14,14 @@ You can add, edit, modify books.
 
 ** Create a book class which will have a "Category" attribute. 
 ** Treat them as the same object.
+
+- Install Node
+
+- npm install 
+
+- npm update
+
+- Run app - npm run dev 
 
 */
 
