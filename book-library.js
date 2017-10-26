@@ -1,4 +1,4 @@
-export let fleet = [
+export let book = [
     {
         author: 'ABC123',
         title: 'drone',
