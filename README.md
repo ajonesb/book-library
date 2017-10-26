@@ -3,7 +3,7 @@
 
 // EXERCISE
 
-/* You have three categories of books: horror, action, romance.
+You have three categories of books: horror, action, romance.
 
 The idea is to create a table of books, with a search input.
 
@@ -13,7 +13,9 @@ You can add, edit, modify books.
 
 
 ** Create a book class which will have a "Category" attribute. 
+
 ** Treat them as the same object.
+
 
 - Install Node
 
@@ -23,26 +25,4 @@ You can add, edit, modify books.
 
 - Run app - npm run dev 
 
-*/
 
-class Book {
-    constructor (category){
-        this.category = category; 
-    }
-   
-}
-
-class Horror extends Book {
-    
-
-}
-
-class Action extends Book {
-    
-    
-}
-
-class Romance extends Book {
-    
-    
-}
