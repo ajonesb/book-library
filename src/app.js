@@ -1,11 +1,12 @@
 /* import $ from 'jquery'; */
 import {Book} from './classes/book.js';
-import {Romance} from './classes/romance.js';
+import {Drama} from './classes/drama.js';
 import {Horror} from './classes/horror.js';
 import {Action} from './classes/action.js';
 import {library} from './book-library.js';
 import {BookTableService} from './services/book-table-service.js';
 
+//Testing
 /* let bookService = new BookTableService();
 bookService.loadData(book); */
 
@@ -18,4 +19,14 @@ let d = new Romance();
 console.log(c);
 console.log(d); */
 
-console.log(library);
+// we are getting our objects on the dom
+// console.log(library);
+
+//instantiate our data service 
+let bookService = new BookTableService();
+//create a new method on bookService called loadData
+bookService.loadData(library); // must go into service and implement loadData
+
+console.log(bookService.action);
+console.log(bookService.horror);
+console.log(bookService.drama);
