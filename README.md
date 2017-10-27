@@ -1,7 +1,7 @@
 # book-library
 
 
-// EXERCISE
+// EXERCISE - ES6 Javascript 
 
 You have three categories of books: horror, action, romance.
 
