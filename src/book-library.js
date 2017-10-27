@@ -1,4 +1,4 @@
-export let book = [
+export let library = [
     {
         author: 'Stephen King',
         title: 'IT',
