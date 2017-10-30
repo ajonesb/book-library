@@ -16,23 +16,23 @@ export class BookTableService {
         //loop through array with for of statement 
         for (let data of library) { // set variable called data, don't know what category your getting
                 switch(data.type) {
-                    case 'action':
-                        let action = this.loadAction(data);
-                        this.action.push(action);
+                    case 'library':
+                        let library = this.loadLibrary(data);
+                        this.library.push(library);
                         break;
-                    case 'horror':
+                    /* case 'horror':
                         this.horror.push(data);
                         break;
                     case 'drama':
                         this.drama.push(data);
-                        break;
+                        break; */
                 }
         }
 
     }
 
-    loadAction(action) { // instantiate action 
-        let c = new Action(action.author, action.title, action.category);
+    loadLibrary(library) { // instantiate action 
+        let c = new library(action.author, action.title, action.category);
         return c; // return action created 
     }
 
