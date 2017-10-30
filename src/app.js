@@ -30,6 +30,6 @@ bookService.loadData(library); // must go into service and implement loadData
 /* console.log(bookService.action); // load all action objects*/
 
 // loop through bookService action 
-for (let author of bookService.action)
-    console.log(bookService.action);
+for (let library of bookService.library)
+    console.log(bookService.library);
     
