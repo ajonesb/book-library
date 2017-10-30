@@ -27,6 +27,9 @@ let bookService = new BookTableService();
 //create a new method on bookService called loadData
 bookService.loadData(library); // must go into service and implement loadData
 
-console.log(bookService.action);
-console.log(bookService.horror);
-console.log(bookService.drama);
+/* console.log(bookService.action); // load all action objects*/
+
+// loop through bookService action 
+for (let author of bookService.action)
+    console.log(bookService.action);
+    
