@@ -17,7 +17,8 @@ export class BookTableService {
         for (let data of library) { // set variable called data, don't know what category your getting
                 switch(data.type) {
                     case 'action':
-                        this.action.push(data);
+                        let action = this.loadAction(data);
+                        this.action.push(action);
                         break;
                     case 'horror':
                         this.horror.push(data);
@@ -28,6 +29,11 @@ export class BookTableService {
                 }
         }
 
+    }
+
+    loadAction(action) { // instantiate action 
+        let c = new Action(action.author, action.title, action.category);
+        return c; // return action created 
     }
 
 }
