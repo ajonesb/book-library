@@ -25,7 +25,9 @@ export class BookDataService {
                         this.errors.push(e);
                     }
                     break;
-                
+                case 'magazine':
+                    this.magazines.push(data);
+                    break;                             
             }
         }
     }
