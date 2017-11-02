@@ -23,5 +23,20 @@ export let library = [
         title: 'In the Mouth of Madness',
         category: 'Horror',
         author: 'John Carpenter'
+    },
+    {
+        title: 'A Beautiful Mind',
+        category: 'Drama',
+        author: 'Sylvia Nasar'
+    },
+    {
+        title: 'Romeo and Juliet',
+        category: 'Drama',
+        author: 'William Shakespeare'
+    },
+    {
+        title: 'Hamlet',
+        category: 'Drama',
+        author: 'William Shakespeare'
     }
 ];
