@@ -1,13 +1,14 @@
-import {Book} from '../classes/books.js';
+import {Books} from '../classes/books.js';
 import {DataError} from './data-error.js';
 
 export class BookDataService {
 
     constructor() {
-        this.books = [];
+        this.categories = [];
         this.errors = [];       
-    }    
+    } 
     
+     
     loadData(library) {
         for (let data of library) {
             switch(data.type) {
@@ -29,22 +30,23 @@ export class BookDataService {
     loadBook(book) {
         try {
             let c = new Book(car.title, car.category, car.author);
-           /*  c.miles = car.miles;
-            c.make = car.make; */
+          /*  c.title = car.title;
+           c.category = car.category;
+           car.author = car.author; */
             return c;
         } catch(e) {
-            this.errors.push(new DataError('error loading book', book));
+            this.errors.push(new DataError('error loading category', category));
         }
         return null;
     }
     
-    validateBookData(book) {
+    validateBookData(category) {
         let requiredProps = 'title category author'.split(' ');
         let hasErrors = false;
         
         for (let field of requiredProps) {
-            if (!book[field]) {
-                this.errors.push(new DataError(`invalid field ${field}`, book));
+            if (!category[field]) {
+                this.errors.push(new DataError(`invalid field ${field}`, category));
                 hasErrors = true;
             }
         }
