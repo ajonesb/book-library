@@ -9,8 +9,8 @@ export class BookDataService {
     }    
     
      
-    loadData(fleet) {
-        for (let data of fleet) {
+    loadData(readings) {
+        for (let data of readings) {
             switch(data.type) {
                 case 'book':
                     if (this.validateBookData(data)) {
