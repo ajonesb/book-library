@@ -40,7 +40,7 @@ export class BookDataService {
            car.author = car.author; */
             return c;
         } catch(e) {
-            this.errors.push(new DataError('error loading category', category));
+            this.errors.push(new DataError('error loading book', books));
         }
         return null;
     }
