@@ -27,7 +27,11 @@ export class BookDataService {
                     break;
                 case 'magazine':
                     this.magazines.push(data);
-                    break;                             
+                    break; 
+                default:
+                let e = new DataError('Invalid reading material type', data);
+                this.errors. push(e);
+                break;                          
             }
         }
     }
@@ -35,7 +39,8 @@ export class BookDataService {
     loadBook(book) {
         try {
             let c = new Book(book.title, book.category, book.type);
-            c.miles = book.author;
+            c.author = book.author;
+            c.published = book.published;        
             return c;
         } catch(e) {
             this.errors.push(new DataError('error loading book', book));
