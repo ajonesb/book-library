@@ -3,41 +3,52 @@ export let library = [
         title: 'IT',
         category: 'Horror',
         author: 'Stephen King',
-        type: 'book'   
+        type: 'book',
+        published: '1986'   
     },
     {
         title: 'The Bourne Identity',
         category: 'Action',
         author: 'Robert Ludlam',
-        type: 'book'
-       
+        type: 'book',
+        published: '2002'    
     },
     {
-        title: 'Horror Weekly',
-        category: 'Horror',
-        author: 'Eli Roth',
-        type: 'magazine'
-        
+        title: 'National Geographic',
+        category: 'Nature',
+        type: 'Magazine',
+        editor: 'Susan Goldberg',
+        frequency: 'Monthly'
+    },
+    {
+        title: 'Rolling Stone',
+        category: 'Music',
+        type: 'Magazine',
+        editor: 'Jann Wenner',
+        frequency: 'Monthly'
     },
     {
         title: 'The Hunger Games',
         category: 'Action',
         author: 'Suzanne Collins',
-        type: 'book'
+        type: 'book',
+        published: '2002'
         
     },
     {
         title: 'Dracula',
         category: 'Horror',
         author: 'Bram Stroker',
-        type: 'book'
+        type: 'book',
+        published: '1897'
         
     },
     {
         title: 'A Beautiful Mind',
         category: 'Drama',
         author: 'Silvia Nasar',
-        type: 'book'
+        type: 'book',
+        published: '2001'
         
     },
     {
@@ -45,18 +56,13 @@ export let library = [
         category: 'Drama',
         author: 'William Shakespeare',
         type: 'book',
+        published: '1597'
     },
     {
         title: 'Hamlet',
         category: 'Drama',
         author: 'William Shakespeare',
         type: 'book',
-    },
-    {
-        title: 'Guitar World',
-        category: 'Music',
-        author: 'Staff',
-        type: 'Magazine',
-    },
-    
+        published: '1609'
+    }   
 ];
