@@ -27,7 +27,7 @@ You can add, edit, modify books.
 - npm install -save material-design-lite
 
 // Install JQuery to manipulate DOM (Use as module)
-npm install -save jquery
+- npm install -save jquery
 
 // system js for es6 modules and common.js, require.js modules
 -npm install -save systemjs
