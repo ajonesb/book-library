@@ -4,7 +4,9 @@ import {DataError} from './data-error.js';
 export class BookDataService {
 
     constructor() {
+        this.title = [];
         this.categories = [];
+        this.author = [];
         this.errors = [];       
     } 
         
@@ -23,16 +25,16 @@ export class BookDataService {
                     }
                     break;
                 case 'category':
-                    this.category.push(data);
+                    this.categories.push(data);
                     break;
                 case 'author':
-                    this.author.push(data);
+                    this.authors.push(data);
                     break;
             }
         }
     }
     
-    loadBook(books) {
+    loadBook(title) {
         try {
             let c = new Book(car.title, car.category, car.author);
           /*  c.title = car.title;
@@ -40,10 +42,11 @@ export class BookDataService {
            car.author = car.author; */
             return c;
         } catch(e) {
-            this.errors.push(new DataError('error loading book', books));
+            this.errors.push(new DataError('error loading book', title));
         }
         return null;
     }
+
     
     validateBookData(books) {
         let requiredProps = 'title category author'.split(' ');
