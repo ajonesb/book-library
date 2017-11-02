@@ -35,7 +35,7 @@ You can add, edit, modify books.
 
 // system js for es6 modules and common.js, require.js modules
 
--npm install -save systemjs
+- npm install -save systemjs
 
 - Run app - npm run dev 
 
