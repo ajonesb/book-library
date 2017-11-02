@@ -2,26 +2,26 @@ export let library = [
     {
         title: 'IT',
         category: 'Horror',
-        author: 'Stephen King',        
+        author: 'Stephen King'        
     },
     {
         title: 'The Bourne Identity',
         category: 'Action',
-        author: 'Robert Ludlam',
+        author: 'Robert Ludlam'
     },
     {
         title: 'The Hunger Games',
         category: 'Action',
-        author: 'Suzanne Collins',
+        author: 'Suzanne Collins'
     },
     {
         title: 'Dracula',
         category: 'Horror',
-        author: 'Bram Stroker',
+        author: 'Bram Stroker'
     },
     {
         title: 'In the Mouth of Madness',
         category: 'Horror',
-        author: 'John Carpenter',
+        author: 'John Carpenter'
     }
 ];
