@@ -17,6 +17,8 @@ You can add, edit, modify books.
 ** Treat them as the same object.
 
 
+******************************************************************************************************************************************
+
 - Install Node - https://nodejs.org/en/
 
 - npm install  - https://www.npmjs.com/get-npm
@@ -33,5 +35,7 @@ You can add, edit, modify books.
 -npm install -save systemjs
 
 - Run app - npm run dev 
+
+- view app on http://localhost:3000/
 
 
