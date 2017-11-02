@@ -1,4 +1,6 @@
 import $ from 'jquery';
+import {Book} from './classes/book.js';
+import {Magazine} from './classes/magazine.js';
 import {library} from './library-data.js';
 import {BookDataService} from './services/book-data-service.js';
 import {DataTable} from './ui/data-table.js';
