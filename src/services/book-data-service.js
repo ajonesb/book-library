@@ -1,10 +1,12 @@
 import {Book} from '../classes/book.js';
+import {Magazine} from '../classes/magazine.js';
 import {DataError} from './data-error.js';
 
 export class BookDataService {
 
     constructor() {
         this.books = [];
+        this.magazines = [];
         this.errors = [];       
     }    
     
