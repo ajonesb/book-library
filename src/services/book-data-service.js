@@ -7,8 +7,7 @@ export class BookDataService {
         this.categories = [];
         this.errors = [];       
     } 
-    
-     
+        
     loadData(library) {
         for (let data of library) {
             switch(data.type) {
@@ -33,7 +32,7 @@ export class BookDataService {
         }
     }
     
-    loadBook(book) {
+    loadBook(books) {
         try {
             let c = new Book(car.title, car.category, car.author);
           /*  c.title = car.title;
