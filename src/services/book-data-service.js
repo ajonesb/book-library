@@ -11,19 +11,19 @@ export class BookDataService {
     loadData(library) {
         for (let data of library) {
             switch(data.type) {
-                case 'category':
+                case 'title':
                     if (this.validateBookData(data)) {
-                        let category = this.loadBook(data);
-                        if (category) 
-                            this.category.push(category);
+                        let title = this.loadBook(data);
+                        if (title) 
+                            this.title.push(title);
                     }
                     else {
                         let e = new DataError('invalid book data', data);
                         this.errors.push(e);
                     }
                     break;
-                case 'title':
-                    this.title.push(data);
+                case 'category':
+                    this.category.push(data);
                     break;
                 case 'author':
                     this.author.push(data);
