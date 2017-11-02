@@ -1,63 +1,55 @@
-import {Books} from '../classes/books.js';
+import {Book} from '../classes/book.js';
 import {DataError} from './data-error.js';
 
 export class BookDataService {
 
     constructor() {
-        this.title = [];
-        this.categories = [];
-        this.author = [];
+        this.books = [];
         this.errors = [];       
-    } 
-        
-    loadData(library) {
-        for (let data of library) {
+    }    
+    
+     
+    loadData(fleet) {
+        for (let data of fleet) {
             switch(data.type) {
-                case 'title':
+                case 'book':
                     if (this.validateBookData(data)) {
-                        let title = this.loadBook(data);
-                        if (title) 
-                            this.title.push(title);
+                        let book = this.loadBook(data);
+                        if (book) 
+                            this.books.push(book);
                     }
                     else {
                         let e = new DataError('invalid book data', data);
                         this.errors.push(e);
                     }
                     break;
-                case 'category':
-                    this.categories.push(data);
-                    break;
-                case 'author':
-                    this.authors.push(data);
-                    break;
+                
             }
         }
     }
     
-    loadBook(title) {
+    loadBook(book) {
         try {
-            let c = new Book(car.title, car.category, car.author);
-          /*  c.title = car.title;
-           c.category = car.category;
-           car.author = car.author; */
+            let c = new Book(book.title, book.category, book.type);
+            c.miles = book.author;
             return c;
         } catch(e) {
-            this.errors.push(new DataError('error loading book', title));
+            this.errors.push(new DataError('error loading book', book));
         }
         return null;
     }
-
     
-    validateBookData(books) {
-        let requiredProps = 'title category author'.split(' ');
+    validateBookData(book) {
+        let requiredProps = 'title category author type'.split(' ');
         let hasErrors = false;
         
         for (let field of requiredProps) {
-            if (!books[field]) {
-                this.errors.push(new DataError(`invalid field ${field}`, books));
+            if (!book[field]) {
+                this.errors.push(new DataError(`invalid field ${field}`, book));
                 hasErrors = true;
             }
         }
+        
         return !hasErrors;
     }
 }
