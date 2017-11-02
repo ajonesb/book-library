@@ -23,6 +23,12 @@ export class BookDataService {
                         this.errors.push(e);
                     }
                     break;
+                case 'title':
+                    this.title.push(data);
+                    break;
+                case 'author':
+                    this.author.push(data);
+                    break;
             }
         }
     }
@@ -40,13 +46,13 @@ export class BookDataService {
         return null;
     }
     
-    validateBookData(category) {
+    validateBookData(books) {
         let requiredProps = 'title category author'.split(' ');
         let hasErrors = false;
         
         for (let field of requiredProps) {
-            if (!category[field]) {
-                this.errors.push(new DataError(`invalid field ${field}`, category));
+            if (!books[field]) {
+                this.errors.push(new DataError(`invalid field ${field}`, books));
                 hasErrors = true;
             }
         }
