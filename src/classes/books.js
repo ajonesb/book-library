@@ -1,8 +1,9 @@
-export class Books {
+import {ReadingMaterial} from './reading-material.js';
+
+export class Book extends ReadingMaterial {
     
     constructor(title, category, author) {
-        this.title = title;
-        this.category = category;
-        this.author = author;
+        super(title, category, author);
+        this.type = null;
     }
 }
