@@ -3,7 +3,7 @@
 
 // EXERCISE - ES6 Javascript 
 
-You have three categories of books: horror, action, romance.
+You have three categories of books: Horror, Action, Drama.
 
 The idea is to create a table of books, with a search input.
 
