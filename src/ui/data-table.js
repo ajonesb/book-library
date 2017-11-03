@@ -30,7 +30,8 @@ export class DataTable extends BaseElement {
         }
         
         return `
-            <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+        
+            <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" id="myTable">
                 <thead>
                     <tr>
                     ${thTags}
@@ -40,7 +41,6 @@ export class DataTable extends BaseElement {
                     ${trTags}
                 </tbody>
             </table>
-
         `;
     }
     
