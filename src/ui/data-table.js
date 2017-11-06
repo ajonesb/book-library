@@ -31,13 +31,13 @@ export class DataTable extends BaseElement {
         
         return `
         
-            <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" id="myTable">
+            <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
                 <thead>
                     <tr>
                     ${thTags}
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="myTable">
                     ${trTags}
                 </tbody>
             </table>
