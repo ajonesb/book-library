@@ -4,6 +4,7 @@ export class BaseElement {
     
     constructor() {
         this.element = null;  // jQuery object
+        /* this.searchBooks(); */
     }
     
     appendToElement(el) {
@@ -24,4 +25,6 @@ export class BaseElement {
     enableJS() {
         componentHandler.upgradeElement(this.element[0]);
     }
+
+    
 }
