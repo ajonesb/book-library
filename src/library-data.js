@@ -1,3 +1,8 @@
+import {Book} from './classes/book.js';
+import {Magazine} from './classes/magazine.js';
+import {SearchInput} from './ui/search-input.js';
+import {BaseElement} from './ui/base-element.js';
+
 export let library = [
     {
         title: 'IT',
