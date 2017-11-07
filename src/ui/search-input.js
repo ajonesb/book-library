@@ -1,5 +1,8 @@
 import {BaseElement} from './base-element.js';
-import {library} from '../library-data.js';  
+import {library} from '../library-data.js'; 
+import {Book} from '../classes/book.js';
+import {Magazine} from '../classes/magazine.js';
+
 
 export class SearchInput extends BaseElement {
         constructor(search) {
@@ -12,7 +15,22 @@ export class SearchInput extends BaseElement {
 <`
         }
 
-        searchBooks(library) {
+        //Troubleshooting For Search Filter Functionality
+
+        /*****************************************************************************
+        - Is the method searchBooks (which originally works as function pulling the array of objects 
+        from a static html table) pulling the array objects from library-data.js? 
+
+        - Is search-input.js able to talk to library-data.js? Yes, it's being imported 
+        with import {library} from '../library-data.js' up top. 
+
+        - Uncaught ReferenceError: searchBooks is not defined at HTMLInputElement.onkeyup 
+        ((index):1) (trying to call function but can't find it.)
+
+                  
+        ****************************************************************************/
+
+        static searchBooks(library) {
         let input, filter, table, tr, td, i;
         input = document.getElementById("searchInput");
         filter = input.value.toUpperCase();
@@ -28,7 +46,7 @@ export class SearchInput extends BaseElement {
             }
             }       
         }
-    }
-    
+    } 
+ 
     
 }
