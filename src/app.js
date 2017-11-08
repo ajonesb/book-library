@@ -5,6 +5,7 @@ import {library} from './library-data.js';
 import {BookDataService} from './services/book-data-service.js';
 import {DataTable} from './ui/data-table.js';
 import {SearchInput} from './ui/search-input.js';
+import {SearchFilterService} from './services/search-filter.js';
 
 const b = new SearchInput();
 b.appendToElement($('body'));
@@ -13,4 +14,6 @@ let dataService = new BookDataService();
 dataService.loadData(library);
 const dt = new DataTable(headers, dataService.books);
 dt.appendToElement($('body'));
+
 /* console.log(library); */
+/* const sb = new searchBooks(book); */
