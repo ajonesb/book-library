@@ -37,9 +37,13 @@ export class SearchInput extends BaseElement {
         - Is the method searchBooks (which originally works as function pulling the array of objects 
         from a static html table) pulling the array objects from library-data.js? 
 
-        - Is search-input.js able to talk to library-data.js? Yes, it's being imported 
-        with import {library} from '../library-data.js' up top. 
+        - Now it is a function on search-filter.js 
 
+        - Is search-input.js able to talk to library-data.js? Yes, it's being imported 
+        with import {library} from '../library-data.js' up top but...
+        
+        // Comes back undefined when doing a console.log(library); interesting..
+    
         - Uncaught ReferenceError: searchBooks is not defined at HTMLInputElement.onkeyup 
         ((index):1) (trying to call function but can't find it.) Maybe call on app.js but how?
 
@@ -48,5 +52,3 @@ export class SearchInput extends BaseElement {
     
 }
 
-// Comes back undefined, interesting..
-/* console.log(library); */
