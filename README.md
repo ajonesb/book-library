@@ -41,3 +41,9 @@ You can add, edit, modify books.
 - view app on http://localhost:3000/
 
 
+*****************************************************************************************************************************
+
+Developer Notes: 
+
+- 10/11/2017
+Note - For filter funcionality outside app, apply this working version outside app - https://codepen.io/ajonesb/pen/mqWMae?editors=1010
