@@ -3,6 +3,7 @@ import {Magazine} from './classes/magazine.js';
 import {SearchInput} from './ui/search-input.js';
 import {BaseElement} from './ui/base-element.js';
 
+
 export let library = [
     {
         title: 'IT',
@@ -108,10 +109,11 @@ length
 
 **********************************************************************************/
 
+// onkeyup and loop through arrays with filter to specific onkey typed.
+// get the dom element and replace its content with the new values of the array
+/* 
 let FilteredResults = library.filter(function (el) {
     return (el);
-    // onkeyup and loop through arrays with filter to specific onkey typed.
-    // get the dom element and replace its content with the new values of the array
     this.searchBooks = function(library) {
             let input, filter, table, tr, td, i;
                 input = document.getElementById("searchInput");
@@ -131,4 +133,28 @@ let FilteredResults = library.filter(function (el) {
         }
 });
 
-console.log(FilteredResults);
+console.log(FilteredResults); */
+
+// apply search filter functionality
+$('#myInput').keyup(function(){
+   let valThis = $(this).val().toLowerCase();
+    if(valThis == ""){
+        $('#myTable > tr').show();           
+    } else {
+        $('#myTable > tr').each(function(){
+            let text = $(this).text().toLowerCase();
+            (text.indexOf(valThis) >= 0) ? $(this).show() : $(this).hide();
+        });
+   };
+});
+
+console.log(library); // good, we are able to communicate with app since showing on console
+
+// show dynamically search input element 
+/* let str = '<input id="myInput" placeholder="Search Books" title="Type in a name" type="text">';
+let child = document.createElement('div');
+child.innerHTML = str;
+child = child.firstChild;
+document.getElementById('myinput').appendChild(child);  */
+//document.getElementsByTagName("tbody")[0].setAttribute("id", "myTable"); 
+
