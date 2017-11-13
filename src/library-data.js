@@ -2,6 +2,7 @@ import {Book} from './classes/book.js';
 import {Magazine} from './classes/magazine.js';
 import {SearchInput} from './ui/search-input.js';
 import {BaseElement} from './ui/base-element.js';
+import {DataTable} from './ui/data-table.js';
 
 
 export let library = [
@@ -135,20 +136,18 @@ let FilteredResults = library.filter(function (el) {
 
 console.log(FilteredResults); */
 
-// apply search filter functionality
+// Apply Search Filter Functionality
 $('#myInput').keyup(function(){
    let valThis = $(this).val().toLowerCase();
     if(valThis == ""){
-        $('#myTable > tr').show();           
+        $('tbody > tr').show();           
     } else {
-        $('#myTable > tr').each(function(){
+        $('tbody > tr').each(function(){
             let text = $(this).text().toLowerCase();
             (text.indexOf(valThis) >= 0) ? $(this).show() : $(this).hide();
         });
    };
 });
-
-console.log(library); // good, we are able to communicate with app since showing on console
 
 // show dynamically search input element 
 /* let str = '<input id="myInput" placeholder="Search Books" title="Type in a name" type="text">';
@@ -157,17 +156,21 @@ child.innerHTML = str;
 child = child.firstChild;
 document.getElementById('myinput').appendChild(child);  */
 
-
-
 /* document.getElementsByTagName("tr")[0].setAttribute("id", "myTable");  */
 
 
+// Test to make sure app is able to print out library
+console.log(library); 
+
 
 // Test to see if jQuery is loading 
-/* if (typeof jQuery == 'undefined') {  
+ if (typeof jQuery == 'undefined') {  
     console.log('jQuery has not been loaded!');  
 }
 else {
     console.log('jQuery loaded!');
-} */
+} 
 
+
+// Test to see if library-data is able to target #myInput
+console.log($('#myInput').val()) 
