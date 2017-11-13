@@ -1,5 +1,6 @@
+// NOT USED SINCE ADDED EASIER FUNCTIONALITY DIRECTLY ON DATA FOR LIBRARY-DATA.JS 
 
-import {library} from '../library-data.js'; 
+/* import {library} from '../library-data.js'; 
 import {Book} from '../classes/book.js';
 import {Magazine} from '../classes/magazine.js';
 import {SearchInput} from '../ui/search-input.js';
@@ -27,6 +28,4 @@ export class SearchFilterService {
         }
     }
 }
-
-// Means it's able to talk to library since it's being imported
-// console.log(library); 
+ */
