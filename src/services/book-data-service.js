@@ -1,7 +1,11 @@
+// Classes
 import {Book} from '../classes/book.js';
 import {Magazine} from '../classes/magazine.js';
+
+// Services
 import {DataError} from './data-error.js';
-import {SearchInput} from '../ui/search-input.js';
+
+
 
 export class BookDataService {
 
@@ -49,7 +53,6 @@ export class BookDataService {
         }
         return null;
     }
-
 
 
    /* removeBook(book) {
