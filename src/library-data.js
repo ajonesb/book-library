@@ -78,7 +78,64 @@ export let library = [
         author: 'William Shakespeare',
         type: 'book',
         published: '1609'
-    }   
+    },
+    {
+        title: 'The Raven',
+        category: 'Horror',
+        author: 'Edgar Allan Poe',
+        type: 'book',
+        published: '1845'
+    },
+    {
+        title: 'The Shining',
+        category: 'Horror',
+        author: 'Stephen King',
+        type: 'book',
+        published: '1977'
+    },
+    {
+        title: 'Salems Lot',
+        category: 'Horror',
+        author: 'Stephen King',
+        type: 'book',
+        published: '1975'
+    },
+    {
+        title: 'Silence of the Lambs',
+        category: 'Horror',
+        author: ' Thomas Harris',
+        type: 'book',
+        published: '1988'
+    },
+     {
+        title: 'Rosemarys Baby',
+        category: 'Horror',
+        author: 'Ira Levin',
+        type: 'book',
+        published: '1967'
+    },
+    {
+        title: 'Macbeth',
+        category: 'Drama',
+        author: 'William Shakespeare',
+        type: 'book',
+        published: '1606'
+    },
+    {
+        title: 'The Lord of the Rings',
+        category: 'Action',
+        author: 'Chuck Wendig',
+        type: 'book',
+        published: '1954'
+    },
+    {
+        title: 'Star Wars - The Force Awakens',
+        category: 'Drama',
+        author: 'J. R. R. Tolkien',
+        type: 'book',
+        published: '2016'
+    }
+                    
 ];
 
 
