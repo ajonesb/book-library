@@ -51,4 +51,4 @@ Note - For filter funcionality outside app, apply this working version outside a
 
 - 13/11/2017
 
-Filter functionality not working on app. Added search filter function directly to library-data.js and used filter intput without module since it was causing issues to work properly as a module being imported and exported. 
+Filter functionality now working on app. Added search filter function directly to library-data.js and used filter intput without module since it was causing issues to work properly as a module being imported and exported. 
