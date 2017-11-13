@@ -1,6 +1,13 @@
+
+// Classes
 import {Book} from './classes/book.js';
 import {Magazine} from './classes/magazine.js';
-import {SearchInput} from './ui/search-input.js';
+import {ReadingMaterial} from './classes/reading-material.js';
+
+// Services
+import {BookDataService} from './services/book-data-service.js';
+
+// UI
 import {BaseElement} from './ui/base-element.js';
 import {DataTable} from './ui/data-table.js';
 
@@ -74,6 +81,20 @@ export let library = [
     }   
 ];
 
+
+ // Apply Search Filter Functionality
+$('#myInput').keyup(function(){
+   let valThis = $(this).val().toLowerCase();
+    if(valThis == ""){
+        $('tbody > tr').show();           
+    } else {
+        $('tbody > tr').each(function(){
+            let text = $(this).text().toLowerCase();
+            (text.indexOf(valThis) >= 0) ? $(this).show() : $(this).hide();
+        });
+   };
+});
+
 /* let libraryTest = library.filter(function (el) {
     return (el.category === "Music");
 });
@@ -136,41 +157,30 @@ let FilteredResults = library.filter(function (el) {
 
 console.log(FilteredResults); */
 
-// Apply Search Filter Functionality
-$('#myInput').keyup(function(){
-   let valThis = $(this).val().toLowerCase();
-    if(valThis == ""){
-        $('tbody > tr').show();           
-    } else {
-        $('tbody > tr').each(function(){
-            let text = $(this).text().toLowerCase();
-            (text.indexOf(valThis) >= 0) ? $(this).show() : $(this).hide();
-        });
-   };
-});
+
 
 // show dynamically search input element 
 /* let str = '<input id="myInput" placeholder="Search Books" title="Type in a name" type="text">';
 let child = document.createElement('div');
 child.innerHTML = str;
 child = child.firstChild;
-document.getElementById('myinput').appendChild(child);  */
+document.getElementById('myinput').appendChild(child); */  
 
 /* document.getElementsByTagName("tr")[0].setAttribute("id", "myTable");  */
 
 
 // Test to make sure app is able to print out library
-console.log(library); 
+// console.log(library); 
 
 
 // Test to see if jQuery is loading 
- if (typeof jQuery == 'undefined') {  
+/*  if (typeof jQuery == 'undefined') {  
     console.log('jQuery has not been loaded!');  
 }
 else {
     console.log('jQuery loaded!');
-} 
+}  */
 
 
 // Test to see if library-data is able to target #myInput
-console.log($('#myInput').val()) 
+/* console.log($('#myInput').val())  */
