@@ -1,4 +1,4 @@
-# Book Library Exercise with ES6 Classes
+# Book Library with ES6 Classes
 
 This exercise involves using ES6 and Javascript Classes as well as applying Javascript Object Oriented Principles such as Polymorphism, Inheritance, Constructor, etc..
 
