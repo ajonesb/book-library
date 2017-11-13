@@ -1,15 +1,20 @@
-import {BaseElement} from './base-element.js';
+
+// ADDED SEARCH INPUT ON INDEX, MODULE NOT NEEDED. ONLY FOR EXAMPLE PURPOSES.  
+
+/* import {BaseElement} from './base-element.js';
 import {library} from '../library-data.js'; 
 import {Book} from '../classes/book.js';
 import {Magazine} from '../classes/magazine.js';
-
+import {DataTable} from './data-table.js';
 
 export class SearchInput extends BaseElement {
 
       getElementString() {
-        return `<input type="text" id="searchInput" onkeyup="searchBooks()" placeholder="Search for names.." title="Type in a name">
+        return `<input placeholder="Search Library" id="myInput" type="text" /> 
         <`
-    }
+    } */
+
+    
         /* constructor() {
             super();
             this.searchBooks = function(library) {
@@ -31,24 +36,6 @@ export class SearchInput extends BaseElement {
             }
     } */
 
-        //Troubleshooting For Search Filter Functionality
-
-        /*****************************************************************************
-        - Is the method searchBooks (which originally works as function pulling the array of objects 
-        from a static html table) pulling the array objects from library-data.js? 
-
-        - Now it is a function on search-filter.js 
-
-        - Is search-input.js able to talk to library-data.js? Yes, it's being imported 
-        with import {library} from '../library-data.js' up top but...
-        
-        // Comes back undefined when doing a console.log(library); interesting..
-    
-        - Uncaught ReferenceError: searchBooks is not defined at HTMLInputElement.onkeyup 
-        ((index):1) (trying to call function but can't find it.) Maybe call on app.js but how?
-
-                  
-        ****************************************************************************/
-    
+  
 }
 
