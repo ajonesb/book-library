@@ -156,5 +156,18 @@ let child = document.createElement('div');
 child.innerHTML = str;
 child = child.firstChild;
 document.getElementById('myinput').appendChild(child);  */
-//document.getElementsByTagName("tbody")[0].setAttribute("id", "myTable"); 
+
+
+
+/* document.getElementsByTagName("tr")[0].setAttribute("id", "myTable");  */
+
+
+
+// Test to see if jQuery is loading 
+/* if (typeof jQuery == 'undefined') {  
+    console.log('jQuery has not been loaded!');  
+}
+else {
+    console.log('jQuery loaded!');
+} */
 
