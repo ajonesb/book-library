@@ -13,6 +13,7 @@ import {DataTable} from './ui/data-table.js';
 
 
 export let library = [
+    
     {
         title: 'IT',
         category: 'Horror',
@@ -151,6 +152,8 @@ $('#myInput').keyup(function(){
         });
    };
 });
+
+
 
 /* let libraryTest = library.filter(function (el) {
     return (el.category === "Music");
