@@ -52,3 +52,9 @@ Note - For filter funcionality outside app, apply this working version outside a
 - 13/11/2017
 
 Filter functionality now working on app. Added search filter function directly to library-data.js and used filter intput on index without module since it was causing issues to work properly as a module being imported and exported. 
+
+- 21/11/2017
+
+Final Functionality for editing, adding, deleting books added. Functionality is located on main index which then will be eventually seperated as a differnt module. Was added to main index only for testing purposes. 
+
+
