@@ -1,8 +1,8 @@
 // ADD NEW BOOKS, EDIT BOOKS, DELETE BOOKS TO LIBRARY FUNCIONALITY BELOW
 
-		// Next id for adding a new book
-	let nextId = 1;
-        // ID of book currently editing
+// Next id for adding a new book
+  let nextId = 1;
+// ID of book currently editing
   let activeId = 0;
 
   function bookDisplay(ctl) {
