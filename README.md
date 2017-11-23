@@ -57,6 +57,8 @@ Filter functionality now working on app. Added search filter function directly t
 
 Final Functionality for editing, adding, deleting books added. Functionality is located on seperate js file for app at add-edit-remove-books.js
 
+Screen shots provided for app image preview of booklibrary1.jpg and booklibrary2.jpg
+
 Minor bug when updating books, doesn't update correctly. 
 
 
